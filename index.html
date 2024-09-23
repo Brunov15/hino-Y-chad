@@ -1,0 +1,52 @@
+pip install gtts
+from gtts import gTTS
+
+# Letra do hino
+letra_hino = """
+Nosso céu é mais azul,
+Como um véu de norte a sul,
+Com o sol a nos guiar,
+Nosso povo a velejar.
+
+Na coragem, a liberdade,
+E na vida, a lealdade.
+Nossa força faz crescer,
+A união nos faz vencer.
+
+Nossa cultura cresce como um clarão,
+Brilhando forte como uma visão.
+Em cada canto, o orgulho em ação,
+Um futuro de transformação.
+
+Glória àqueles que lutaram,
+Com bravura nos libertaram.
+Nosso hino sempre vai ecoar,
+E nossa história nunca vai acabar.
+
+Das águas mornas que banham o chão,
+Ao vento forte da imensidão,
+Nossas terras têm força e fé,
+Caminhamos com firmeza em cada pé.
+
+Nosso povo, audaz e fiel,
+Sempre olhando para o céu.
+Com a esperança que nos conduz,
+E o trabalho que nos reluz.
+
+Nas montanhas, nossa história gravada,
+Nas planícies, a luta consagrada.
+Nos mares que nos cercam em união,
+Resplandece nossa nação.
+
+De geração em geração,
+Nosso hino é o coração,
+Batendo forte e a guiar,
+O amanhã que vamos forjar.
+"""
+
+# Criar o áudio usando gTTS
+audio_hino = gTTS(text=letra_hino, lang='pt', slow=False)
+audio_hino.save("hino_yachad.mp3")
+
+print("Áudio do hino criado com sucesso como 'hino_yachad.mp3'")
+python hino_yachad.py
